@@ -1,0 +1,94 @@
+
+### Site Settings ###
+
+title: "Taya's Portfolio"
+
+description: >-
+  Software Engineering student specialising in Game Design.
+  Passionate about game development, gameplay programming,
+  graphics programming and creating interactive experiences.
+
+url: "https://tayagitit.github.io"
+baseurl: ""
+
+repository: tayagitit/tayagitit.github.io
+
+remote_theme: yousinix/portfolYOU
+
+open_new_tab: true
+
+
+### Plugins ###
+
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+
+nav_exclude:
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+
+author:
+  name: Taya
+  image: /assets/images/profile.jpg
+  github: tayagitIT
+
+
+### Posts ###
+
+permalink: /blog/:title
+
+
+### Collections ###
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Analytics ###
+
+analytics:
+  enabled: false
+
+
+### Buy me a coffee ###
+
+buymeacoffee:
+  enabled: false
+  username: ""
+  color: "#a78bfa"
+  message: "Thank you for visiting."
+  description: "Support my work!"
+
+
+### Defaults for collections ###
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
+
+
+### Exclude from processing ###
+
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
